@@ -5,10 +5,6 @@
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 # 修改IP项的EOF于EOF之间请不要插入其他扩展代码，可以删除或注释里面原本的代码
 sed -i '$a src-git bypass https://github.com/kiddin9/openwrt-bypass' feeds.conf.default
-git clone https://github.com/kiddin9/luci-app-dnsfilter package/luci-app-dnsfilter
-# git clone https://github.com/DavBfr/luci-app-netmap package/luci-app-netmap
-git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
-sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
 
 cat >$NETIP <<-EOF
