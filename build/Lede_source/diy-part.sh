@@ -4,7 +4,7 @@
 # 自行拉取插件之前请SSH连接进入固件配置里面确认过没有你要的插件再单独拉取你需要的插件
 # 不要一下就拉取别人一个插件包N多插件的，多了没用，增加编译错误，自己需要的才好
 # 修改IP项的EOF于EOF之间请不要插入其他扩展代码，可以删除或注释里面原本的代码
-#sed -i '$a src-git bypass https://github.com/kiddin9/openwrt-bypass' feeds.conf.default
+sed -i '$a src-git bypass https://github.com/kiddin9/openwrt-bypass' feeds.conf.default
 
 
 cat >$NETIP <<-EOF
